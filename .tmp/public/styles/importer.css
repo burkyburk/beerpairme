@@ -14,8 +14,9 @@
  * or any other Grunt tasks you like.)
  */
 @import url(reset.css);
-.col8 {
-  margin: 0px auto; }
+.search {
+  margin: 0px auto;
+  text-align: center; }
 
 .main-title {
   font-family: helvetica;
@@ -29,54 +30,5 @@
   font-size: 1em;
   color: black;
   text-align: center; }
-
-section {
-  max-width: 1430px; }
-  section div {
-    padding: 0.5em;
-    box-sizing: border-box; }
-  section div:last-child {
-    margin-right: 0; }
-
-.col8, .col2, .col6, .col7, .col3, .col4 {
-  width: 100%;
-  margin-bottom: 1.754%; }
-
-@media screen and (min-width: 500px) {
-  .col8 {
-    width: 66.078%;
-    margin-right: 1.754%;
-    margin-bottom: 1.754%;
-    float: left; }
-
-  .col4 {
-    width: 32.162%;
-    margin-right: 1.754%;
-    margin-bottom: 1.754%;
-    float: left; }
-
-  .col6 {
-    width: 49.12%;
-    margin-right: 1.754%;
-    margin-bottom: 1.754%;
-    float: left; }
-
-  .col2 {
-    width: 15.204%;
-    margin-right: 1.754%;
-    margin-bottom: 1.754%;
-    float: left; }
-
-  .col3 {
-    width: 23.683%;
-    margin-right: 1.754%;
-    margin-bottom: 1.754%;
-    float: left; }
-
-  .col7 {
-    width: 57.599%;
-    margin-right: 1.754%;
-    margin-bottom: 1.754%;
-    float: left; } }
 
 /*# sourceMappingURL=importer.css.map */
