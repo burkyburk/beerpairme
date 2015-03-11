@@ -1,4 +1,18 @@
+input {
+    font-size: 5em;
+    width: 5em;
+    text-align:center;
+    margin: .5em 0px;
+}
 .search {
     margin: 0px auto;
     text-align: center;
+}
+.search-table {
+    margin: 0px auto;
+    text-align: left;
+    th {
+        font-size: 2em;
+        border: 1px solid grey;
+    }
 }
