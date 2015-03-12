@@ -1,7 +1,7 @@
-<nav ng-repeat="beer in beerdetails">
-      <div>ID: </div>
-      <div> {{ beer.id }}</div>
-      <div>  {{ beerdetails.id }}</div>
-      <div>   </div>
-      <div>   </div>
-</nav>
+<h1>Name:</h1><h1 ng-bind="beerdetails.name">Name: </h1>
+<h1>Brewery:</h1><h1 ng-bind="beerdetails.breweries[0].name"></h1>
+<h1>Style:</h1><h1 ng-bind="beerdetails.style.name"></h1>
+<h1>ABV:</h1><h1 ng-bind="beerdetails.abv"></h1>
+<h1>Description</h1><h1 ng-bind="beerdetails.description"></h1>
+<h1>Organic?</h1><h1 ng-bind="beerdetails.isOrganic"></h1>
+<h1>Label</h1><img src="{{ beerdetails.labels.medium }}">

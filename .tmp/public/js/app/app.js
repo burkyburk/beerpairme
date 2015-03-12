@@ -12,7 +12,7 @@ angular.module('app', ['app.controllers','ui.router'])
 		controller: 'infoCtrl'
 	})
 	.state('beerdetails', {
-		url: '/beerdetails',
+		url: '/beerdetails/:beerId',
 		templateUrl: 'templates/beerdetails.html',
 		controller: 'beerdetailsCtrl'
 	})

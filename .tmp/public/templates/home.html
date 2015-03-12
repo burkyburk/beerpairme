@@ -16,7 +16,7 @@
       <th>ABV </th>
     </thead>
     <tbody>
-      <tr class="selected" ng-repeat="beer in beers" ng-click="beerdetailsView(beer.id)" ui-sref='beerdetails'>
+      <tr class="selected" ng-repeat="beer in beers"  ui-sref='beerdetails({beerId:beer.id})'>
         <td> {{ beer.name }} </td>
         <td> {{ beer.breweries[0].name }}</td>
         <td> {{ beer.style.name }}
