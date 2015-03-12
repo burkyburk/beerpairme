@@ -10,19 +10,19 @@
   </form>
   <table ng-show="showTable" class="search-table">
     <thead>
-      <th ng-click="nameClick('toString() || _.text')"> Name </th>
-      <th ng-click="yearClick('yearpublished')"> Brewery </th>
+      <th> Name </th>
+      <th> Brewery </th>
       <th>Style</th>
       <th>ABV </th>
     </thead>
     <tbody>
-      <tr class="selected" ng-repeat="beer in beers">
+      <tr class="selected" ng-repeat="beer in beers" ng-click="beerdetailsView(beer.id)" ui-sref='beerdetails'>
         <td> {{ beer.name }} </td>
         <td> {{ beer.breweries[0].name }}</td>
         <td> {{ beer.style.name }}
           <td> {{ beer.abv}} </td>
     </tbody>
   </table>
-  </div>
+
 
 </section>

@@ -1,10 +1,15 @@
 angular.module('app.controllers', [])
+
+
 .controller('homeCtrl', function($scope, $http) {
 
-    	var gameCollection = [];
-    	var sort = true;
+
         $scope.beers = [];
         $scope.searchParam = '';
+        $scope.beerdetails = [];
+        $scope.beerId = '';
+
+
 
     	$scope.searchSubmit=function(searchParam){
     		if(searchParam.length < 2) {
@@ -22,14 +27,36 @@ angular.module('app.controllers', [])
     			});
     		};
 
+
+                $scope.beerdetailsView = function(beerId) {
+                $http.get('http://api.brewerydb.com/v2/beer/'+beerId+'?key=5e6ff5f6aa57d35101352aff2579b986&withBreweries=y')
+                    .success(function(response) {
+                        $scope.beerdetails = response.data;
+                        console.log(response);
+                        console.log($scope.beerdetails);
+                        console.log($scope.beerdetails.id);
+                        console.log($scope.beerdetails.name);
+                        console.log($scope.beerdetails.description);
+
+                    })
+                    .error(function(err) {
+                        console.log(err);
+                    });
+            };
+
+
+
+
+
     })
 .controller('newpairingsCtrl', function() {
 
 })
-.controller('beerdetailsCtrl', function() {
+.controller('beerdetailsCtrl', function($scope, $http) {
+
+
 
 })
-
 .controller('infoCtrl', function() {
 
 });
