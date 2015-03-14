@@ -1,7 +1,16 @@
-<h1>Name:</h1><h1 ng-bind="beerdetails.name">Name: </h1>
-<h1>Brewery:</h1><h1 ng-bind="beerdetails.breweries[0].name"></h1>
-<h1>Style:</h1><h1 ng-bind="beerdetails.style.name"></h1>
-<h1>ABV:</h1><h1 ng-bind="beerdetails.abv"></h1>
-<h1>Description</h1><h1 ng-bind="beerdetails.description"></h1>
-<h1>Organic?</h1><h1 ng-bind="beerdetails.isOrganic"></h1>
-<h1>Label</h1><img src="{{ beerdetails.labels.medium }}">
+<div class="beerdetails">
+    <div class="imganddetails">
+      <div class="imagebox">
+          <img src="{{ beerdetails.labels.medium }}">
+      </div>
+      <div class="beerbasics">
+      <h1 ng-bind="beerdetails.name"></h1>
+      <h1 ng-bind="beerdetails.breweries[0].name"></h1>
+      <h1 ng-bind="beerdetails.style.name"></h1>
+      <h1 ng-bind="beerdetails.abv"></h1>
+
+      </div>
+  </div>
+  <h1 ng-bind="beerdetails.description"></h1>
+
+</div>

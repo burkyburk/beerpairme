@@ -1,14 +1,29 @@
+html {
+    background-color: #4BBDDE;
+    font-family: 'Noto Sans';
+body {
+    font-family: 'Noto Sans';
+}
 .main-title {
-    font-family: helvetica;
     font-size: 5em;
-    color: black;
+    color: #FAE074;
     text-align: center;
     padding-top: .5em;
     padding-bottom: .25em;
+    letter-spacing: .2em;
+    font-family: 'Noto Sans';
+    font-weight: 600;
 }
 .main-nav {
-    font-family: helvetica;
     font-size: 1.2em;
-    color: black;
     text-align: center;
+    letter-spacing: .1em;
+        a{
+    text-decoration: none;
+    color: #FAE074;
+        &:hover {
+            color:#FED730;
+        }
+        }
+}
 }
