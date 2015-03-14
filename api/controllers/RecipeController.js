@@ -1,7 +1,7 @@
 /**
- * AssignmentController
+ * RecipeController
  *
- * @description :: Server-side logic for managing Assignments
+ * @description :: Server-side logic for managing Recipes
  * @help        :: See http://links.sailsjs.org/docs/controllers
  */
 
