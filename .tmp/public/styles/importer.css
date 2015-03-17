@@ -63,13 +63,13 @@ table {
     cursor: pointer; }
 
 html {
-  background-color: #4BBDDE;
+  background-color: #42091A;
   font-family: 'Noto Sans'; }
   html body {
     font-family: 'Noto Sans'; }
   html .main-title {
     font-size: 5em;
-    color: #FAE074;
+    color: #F9DF7B;
     text-align: center;
     padding-top: .5em;
     padding-bottom: .25em;
@@ -82,7 +82,7 @@ html {
     letter-spacing: .1em; }
     html .main-nav a {
       text-decoration: none;
-      color: #FAE074; }
+      color: #F9DF7B; }
       html .main-nav a:hover {
         color: #FED730; }
 
@@ -98,7 +98,7 @@ html {
     border: 1px solid #F9DF7B;
     float: right; }
   .beerdetails h1 {
-    color: #FAE074; }
+    color: #F9DF7B; }
 
 h1 {
   font-weight: lighter;

@@ -13,7 +13,7 @@ angular.module('app.controllers', [])
     		if(searchParam.length < 2) {
     			$scope.errorMsg = "Search requires 2 or more characters";
     		}
-    		$http.get('http://api.brewerydb.com/v2/search?key=5e6ff5f6aa57d35101352aff2579b986&q='+searchParam+'&type=beer&withBreweries=y')
+    		$http.get('/beer/search?query='+searchParam)
     			.success(function(response) {
                     $scope.beers = response.data;
                     console.log(response);
@@ -35,7 +35,7 @@ angular.module('app.controllers', [])
 
 
               $scope.beerdetails = [];
-     $http.get('http://api.brewerydb.com/v2/beer/'+$stateParams.beerId+'?key=5e6ff5f6aa57d35101352aff2579b986&withBreweries=y')
+     $http.get('/beer/beerdetails?query='+$stateParams.beerId)
           .success(function(response) {
              $scope.beerdetails = response.data;
              console.log(response);
@@ -47,7 +47,7 @@ angular.module('app.controllers', [])
           .error(function(err) {
              console.log(err);
           });
- 
+
       console.log($stateParams);
       console.log($stateParams.beerId);
 

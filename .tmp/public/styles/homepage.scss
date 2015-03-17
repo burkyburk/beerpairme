@@ -1,12 +1,15 @@
+$background-color: #42091A;
+$primary-color: #F9DF7B;
+
 html {
-    background-color: #4BBDDE;
+    background-color: $background-color;
     font-family: 'Noto Sans';
 body {
     font-family: 'Noto Sans';
 }
 .main-title {
     font-size: 5em;
-    color: #FAE074;
+    color: $primary-color;
     text-align: center;
     padding-top: .5em;
     padding-bottom: .25em;
@@ -20,7 +23,7 @@ body {
     letter-spacing: .1em;
         a{
     text-decoration: none;
-    color: #FAE074;
+    color: $primary-color;
         &:hover {
             color:#FED730;
         }
