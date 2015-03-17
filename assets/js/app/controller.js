@@ -18,7 +18,6 @@ angular.module('app.controllers', [])
                     $scope.beers = response.data;
                     console.log(response);
     				$scope.showTable = true;
-                    console.log($scope.beers);
     			})
     			.error(function(err) {
     				console.log(err);
@@ -32,24 +31,43 @@ angular.module('app.controllers', [])
 })
 .controller('beerdetailsCtrl', function($scope, $http, $stateParams) {
 
+            $scope.beerdetails = [];
+            $scope.beerstyle = '';
+
+            function GetRecipe(style) {
+                $http.get('/Recipe?style='+style)
+                .success(function(response) {
+                    $scope.beerstyle = response[0];
+                    console.log(response);
+                    console.log($scope.beerstyle.pairings);
+
+                })
+                .error(function(err)   {
+                    console.log(err);
+                });
+            }
+            function styleParse(beerstyle) {
+                if ($scope.beerstyle.indexOf('Hefeweizen') !==-1)
+                    GetRecipe('Hefeweizen');
+            }
 
 
-              $scope.beerdetails = [];
-     $http.get('/beer/beerdetails?query='+$stateParams.beerId)
-          .success(function(response) {
-             $scope.beerdetails = response.data;
-             console.log(response);
-             console.log($scope.beerdetails);
-             console.log($scope.beerdetails.id);
-             console.log($scope.beerdetails.description);
+
+             $http.get('/beer/beerdetails?query='+$stateParams.beerId)
+                .success(function(response) {
+                    $scope.beerdetails = response.data;
+                    $scope.beerstyle = $scope.beerdetails.style.name;
+                    styleParse($scope.beerstyle);
+
 
           })
-          .error(function(err) {
-             console.log(err);
+                .error(function(err) {
+                    console.log(err);
           });
 
-      console.log($stateParams);
+
       console.log($stateParams.beerId);
+
 
 
 })

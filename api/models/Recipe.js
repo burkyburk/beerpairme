@@ -8,12 +8,17 @@
 module.exports = {
 
   attributes: {
-      name: {
-  		type: 'string',
-  		required: true,
-  		unique: false
-  	},
-  	url: {
+      style: {
+         type: 'string',
+         required: true,
+         unique: false
+     },
+      pairings: {
+          type: 'string',
+          required: false,
+          unique: false
+      },
+  	   url: {
   		type: 'string',
   		required: true,
   		unique: false
