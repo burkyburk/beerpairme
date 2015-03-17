@@ -95,7 +95,8 @@ html {
   border: 2px solid #F9DF7B; }
   .beerdetails .imagebox {
     display: inline-block;
-    border: 1px solid #F9DF7B;
+    border-bottom: 1px solid #F9DF7B;
+    border-right: 1px solid #F9DF7B;
     float: right; }
   .beerdetails h1 {
     color: #F9DF7B; }
@@ -111,15 +112,9 @@ p {
   text-align: center;
   margin-top: 1%; }
 
-Body {
-  font-family: 'Montserrat'; }
-
 #container {
   width: 400px;
   margin: 0 auto;
-  border-top: 1px solid #F9DF7B;
-  border-left: 1px solid #F9DF7B;
-  border-right: 1px solid #F9DF7B;
   display: inline-block;
   float: right; }
 
@@ -133,7 +128,18 @@ Body {
   border-bottom: 1px solid #F9DF7B;
   border-top: 1px solid #ffffff; }
 
-.accordion p {
+.accordion2 label {
+  display: inline-block;
+  background-color: #ffffff;
+  padding: 16.9px;
+  color: #424242;
+  text-shadow: 0 0 2px rgba(255, 255, 255, 0.6);
+  cursor: pointer;
+  border-bottom: 1px solid #F9DF7B;
+  border-top: 1px solid #ffffff;
+  width: 626px; }
+
+.accordion2 p {
   color: #424242;
   padding: 10px;
   font-size: 0.8em;
@@ -146,42 +152,6 @@ Body {
   background-color: #fff;
   margin-top: 0px; }
 
-#tm:checked ~ .hiddentext {
-  display: block;
-  visibility: visible;
-  opacity: 1; }
-
-input#tm {
-  display: none;
-  position: relative; }
-
-#tn:checked ~ .hiddentext {
-  display: block;
-  visibility: visible;
-  opacity: 1; }
-
-input#tn {
-  display: none;
-  position: relative; }
-
-#to:checked ~ .hiddentext {
-  display: block;
-  visibility: visible;
-  opacity: 1; }
-
-input#to {
-  display: none;
-  position: relative; }
-
-#tp:checked ~ .hiddentext {
-  display: block;
-  visibility: visible;
-  opacity: 1; }
-
-input#tp {
-  display: none;
-  position: relative; }
-
 #tq:checked ~ .hiddentext {
   display: block;
   visibility: visible;
@@ -193,6 +163,11 @@ input#tq {
 
 .arrow {
   color: #666666; }
+
+.pairingsbox {
+  display: inline-block;
+  margin: 1em auto;
+  text-align: center; }
 
 html {
   font-family: Noto Sans; }

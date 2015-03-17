@@ -26,7 +26,21 @@ angular.module('app.controllers', [])
 
 
     })
-.controller('newpairingsCtrl', function() {
+.controller('newpairingsCtrl', function($scope, $http) {
+
+            $scope.newpairings = [];
+
+            function NewPairings() {
+                $http.get('/Recipe')
+                .success(function(response) {
+                    $scope.newpairings = response;
+                    console.log(response);
+                })
+                .error(function(err)    {
+                    console.log(err);
+                });
+            }
+
 
 })
 .controller('beerdetailsCtrl', function($scope, $http, $stateParams) {
@@ -49,7 +63,10 @@ angular.module('app.controllers', [])
             function styleParse(beerstyle) {
                 if ($scope.beerstyle.indexOf('Hefeweizen') !==-1)
                     GetRecipe('Hefeweizen');
+                else if ($scope.beerstyle.indexOf('India Pale Ale') !==-1)
+                        GetRecipe('India Pale Ale');
             }
+
 
 
 
@@ -58,6 +75,7 @@ angular.module('app.controllers', [])
                     $scope.beerdetails = response.data;
                     $scope.beerstyle = $scope.beerdetails.style.name;
                     styleParse($scope.beerstyle);
+                    console.log($scope.beerdetails);
 
 
           })
