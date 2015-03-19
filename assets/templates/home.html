@@ -2,26 +2,27 @@
   <form ng-submit="searchSubmit(searchParam)">
     <div class="box">
       <div class="container-1">
-        <input ng-model="searchParam" type="search" id="search" results=10 placeholder="Search for any beer or brewery..." />
+        <input ng-model="searchParam" type="search" id="search" results=20 placeholder="Search for any beer or brewery..." />
         <br>
         <h4 ng-bind="errorMsg" class="errorMsg" Search requires two or more characters.</h4>
       </div>
     </div>
   </form>
-  <table ng-show="showTable" class="search-table">
-    <thead>
-      <th>Name</th>
-      <th>Brewery</th>
-      <th>Style</th>
-      <th>ABV</th>
-    </thead>
-    <tbody>
-      <tr class="selected" ng-repeat="beer in beers" ui-sref='beerdetails({beerId:beer.id})'>
-        <td> {{ beer.name }} </td>
-        <td> {{ beer.breweries[0].name }}</td>
-        <td> {{ beer.style.name }}
-          <td> {{ beer.abv}} </td>
-    </tbody>
+  <table ng-show="showTable" ng-table="tableParams" class="search-table">
+    <tr ng-repeat="beer in $data" ui-sref='beerdetails({beerId:beer.id})'>
+        <td data-title="'Name'" sortable="'name'">
+                {{beer.name}}
+            </td>
+        <td data-title="'Brewery'" sortable="'breweries[0].name'">
+                {{beer.breweries[0].name}}
+            </td>
+        <td data-title="'Style'" sortable="'style.name'">
+                    {{beer.style.name}}
+                </td>
+        <td data-title="'ABV'" sortable="'abv'">
+                        {{beer.abv}}
+                    </td>
+    </tr>
   </table>
 </section>
 
@@ -30,11 +31,9 @@
         <div class="bubble x1"></div>
         <div class="bubble x2"></div>
         <div class="bubble x3"></div>
-        <div class="bubble x4"></div>
         <div class="bubble x5"></div>
         <div class="bubble x6"></div>
         <div class="bubble x7"></div>
         <div class="bubble x8"></div>
-        <div class="bubble x9"></div>
         <div class="bubble x10"></div>
 </div>

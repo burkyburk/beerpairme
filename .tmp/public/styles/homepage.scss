@@ -33,8 +33,11 @@ body {
     color: black;
         &:hover {
             color:#85AA48;
-            text-shadow: 1px 1px 1px #555;
+            text-shadow: 2px 2px 2px white;
         }
         }
 }
+}
+.ng-table-pager {
+    display:none;
 }

@@ -1,74 +1,71 @@
 <div class="beerdetails">
-    <div>
-  <!-- Start of the accordion -->
-  <div class="container">
-    <!-- Item 1 -->
-    <div class="accordion">
-      <label class="accordionitem">
-        <h2 ng-bind="beerdetails.name">
-        </h2>
-      </label>
+  <div class="detailsandimage">
+    <!-- Start of the accordion -->
+    <div class="container">
+      <!-- Item 1 -->
+      <div class="accordion">
+        <label class="accordionitem">
+          <h2 ng-bind="beerdetails.name">
+          </h2>
+        </label>
+      </div>
+
+      <!-- Item 2 -->
+      <div class="accordion">
+        <label class="accordionitem">
+          <h2 ng-bind="beerdetails.breweries[0].name">
+          </h2>
+        </label>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="accordion">
+        <label class="accordionitem">
+          <h2 ng-bind="beerdetails.style.name">
+          </h2>
+        </label>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="accordion">
+        <label class="accordionitem">
+          <h2> {{beerdetails.abv}} ABV
+          </h2>
+        </label>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="accordion">
+        <label class="accordionitem">
+          <h2> {{beerdetails.ibu}} IBU
+          </h2>
+        </label>
+      </div>
+
+
     </div>
 
-    <!-- Item 2 -->
-    <div class="accordion">
-      <label class="accordionitem">
-        <h2 ng-bind="beerdetails.breweries[0].name">
-        </h2>
-      </label>
+
+
+
+    <div class="imagebox">
+      <img src="{{ beerdetails.labels.medium }}">
     </div>
-
-    <!-- Item 3 -->
-    <div class="accordion">
-      <label class="accordionitem">
-        <h2 ng-bind="beerdetails.style.name">
-        </h2>
-      </label>
-    </div>
-
-    <!-- Item 4 -->
-    <div class="accordion">
-      <label class="accordionitem">
-        <h2> {{beerdetails.abv}} ABV
-      </h2>
-      </label>
-    </div>
-
-    <!-- Item 5 -->
-    <div class="accordion">
-      <label class="accordionitem">
-        <h2> {{beerdetails.ibu}} IBU
-      </h2>
-      </label>
-    </div>
-
-
-  </div>
-
-
-
-
-  <div class="imagebox">
-    <img src="{{ beerdetails.labels.medium }}">
-  </div>
   </div>
 
 
   <!-- Item 6 -->
   <div class="accordion2">
     <label for="tq" class="accordionitem">
-      <h2>Description
-        <span class="arrow">&raquo;</span>
-    </h2>
+      <h2 ng-bind="beerdetails.description" </h2>
     </label>
-    <input type="checkbox" id="tq" />
-    <p class="hiddentext" ng-bind="beerdetails.description"></p>
   </div>
 
   <div class="pairingsbox">
-      <div class="pairings">Pairing Info: {{beerstyle.pairings}}
-      </div><br>
-      <a ng-href="{{beerstyle.url}}">Recommended Recipe(s)</a>
+    <div class="pairings">Pairing Info: {{beerstyle.pairings}}
+    </div>
+    <br>
+    <a ng-href="{{beerstyle.url}}">Recommended Recipe(s)</a>
 
   </div>
 </div>

@@ -1,7 +1,7 @@
-angular.module('app.controllers', [])
+angular.module('app.controllers', ['ngTable'])
 
 
-.controller('homeCtrl', function($scope, $http) {
+.controller('homeCtrl', function($scope, $http, $filter, ngTableParams) {
 
 
         $scope.beers = [];
@@ -18,6 +18,26 @@ angular.module('app.controllers', [])
                     $scope.beers = response.data;
                     console.log(response);
     				$scope.showTable = true;
+
+                    $scope.tableParams = new ngTableParams({
+                        page: 1,            // show first page
+                        count: 15,          // count per page
+                        sorting: {
+                            name: 'asc'     // initial sorting
+                        },
+                        counts:''
+                    }, {
+                        total: $scope.beers.length, // length of data
+                        getData: function($defer, params) {
+                            // use build-in angular filter
+                            var orderedData = params.sorting() ?
+                                                $filter('orderBy')($scope.beers, params.orderBy()) :
+                                                $scope.beers;
+                                                    console.log(params.orderBy());
+                            $defer.resolve(orderedData.slice((params.page() - 1) * params.count(), params.page() * params.count()));
+                        }
+                    });
+
     			})
     			.error(function(err) {
     				console.log(err);
@@ -25,7 +45,8 @@ angular.module('app.controllers', [])
     		};
 
 
-    })
+
+})
 .controller('newpairingsCtrl', function($scope, $http) {
 
             $scope.newpairings = [];
@@ -33,6 +54,9 @@ angular.module('app.controllers', [])
             function NewPairings() {
                 $http.get('/Recipe')
                 .success(function(response) {
+                    for(var i=0; i<response.length; i++){
+                        response[i].createdAt = moment(response[i].createdAt).format('MMMM Do YYYY');
+                    }
                     $scope.newpairings = response;
                     console.log(response);
                 })
@@ -71,7 +95,7 @@ angular.module('app.controllers', [])
                         GetRecipe('Stout');
                 else if ($scope.beerstyle.indexOf('Porter') !==-1)
                         GetRecipe('Porter');
-                else if ($scope.beerstyle.indexOf('Pilsner') !==-1)
+                else if ($scope.beerstyle.indexOf('Pilsener') !==-1)
                         GetRecipe('Pilsner');
                 else if ($scope.beerstyle.indexOf('Lager') !==-1)
                         GetRecipe('Lager');

@@ -1,4 +1,4 @@
-angular.module('app', ['app.controllers','ui.router'])
+angular.module('app', ['app.controllers','ui.router', 'ngTable'])
 .config(function($stateProvider, $urlRouterProvider, $locationProvider) {
 	$stateProvider
 	.state('home', {
