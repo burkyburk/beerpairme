@@ -1,15 +1,15 @@
-<table class="search-table">
+<table class="newtable">
   <thead>
     <th>Style</th>
     <th>Pairings</th>
     <th>Link</th>
-    <th>Date Created</th>
+    <th>Date Added</th>
   </thead>
   <tbody>
     <tr class="selected" ng-repeat="pairing in newpairings">
       <td>{{ pairing.style }}</td>
       <td>{{ pairing.pairings }}</td>
-      <td>{{ pairing.url }}</td>
+      <td><a ng-href="{{pairing.url}}">New Recipe(s)</a></td>
       <td>{{ pairing.createdAt }}</td>
   </tbody>
 </table>

@@ -34,7 +34,7 @@ this["JST"]["assets/templates/newpairings.html"] = function(obj) {
 obj || (obj = {});
 var __t, __p = '', __e = _.escape;
 with (obj) {
-__p += '<table class="search-table">\n  <thead>\n    <th>Style</th>\n    <th>Pairings</th>\n    <th>Link</th>\n    <th>Date Created</th>\n  </thead>\n  <tbody>\n    <tr class="selected" ng-repeat="pairing in newpairings">\n      <td>{{ pairing.style }}</td>\n      <td>{{ pairing.pairings }}</td>\n      <td>{{ pairing.url }}</td>\n      <td>{{ pairing.createdAt }}</td>\n  </tbody>\n</table>\n';
+__p += '<table class="newtable">\n  <thead>\n    <th>Style</th>\n    <th>Pairings</th>\n    <th>Link</th>\n    <th>Date Added</th>\n  </thead>\n  <tbody>\n    <tr class="selected" ng-repeat="pairing in newpairings">\n      <td>{{ pairing.style }}</td>\n      <td>{{ pairing.pairings }}</td>\n      <td><a ng-href="{{pairing.url}}">New Recipe(s)</a></td>\n      <td>{{ pairing.createdAt }}</td>\n  </tbody>\n</table>\n';
 
 }
 return __p
