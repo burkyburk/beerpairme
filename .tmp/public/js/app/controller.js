@@ -40,6 +40,8 @@ angular.module('app.controllers', [])
                     console.log(err);
                 });
             }
+            NewPairings();
+            moment().format('l');    // 3/18/2015
 
 
 })
@@ -65,6 +67,18 @@ angular.module('app.controllers', [])
                     GetRecipe('Hefeweizen');
                 else if ($scope.beerstyle.indexOf('India Pale Ale') !==-1)
                         GetRecipe('India Pale Ale');
+                else if ($scope.beerstyle.indexOf('Stout') !==-1)
+                        GetRecipe('Stout');
+                else if ($scope.beerstyle.indexOf('Porter') !==-1)
+                        GetRecipe('Porter');
+                else if ($scope.beerstyle.indexOf('Pilsner') !==-1)
+                        GetRecipe('Pilsner');
+                else if ($scope.beerstyle.indexOf('Lager') !==-1)
+                        GetRecipe('Lager');
+                else if ($scope.beerstyle.indexOf('Bock') !==-1)
+                        GetRecipe('Bock');
+                else if ($scope.beerstyle.indexOf('Lambic') !==-1)
+                        GetRecipe('Lambic');
             }
 
 

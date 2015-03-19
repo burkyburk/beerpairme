@@ -1,1 +1,15 @@
-<div ng-bind="newpairings"></div>
+<table class="search-table">
+  <thead>
+    <th>Style</th>
+    <th>Pairings</th>
+    <th>Link</th>
+    <th>Date Created</th>
+  </thead>
+  <tbody>
+    <tr class="selected" ng-repeat="pairing in newpairings">
+      <td>{{ pairing.style }}</td>
+      <td>{{ pairing.pairings }}</td>
+      <td>{{ pairing.url }}</td>
+      <td>{{ pairing.createdAt }}</td>
+  </tbody>
+</table>

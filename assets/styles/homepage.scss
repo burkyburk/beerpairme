@@ -1,31 +1,39 @@
-$background-color: #42091A;
-$primary-color: #F9DF7B;
+$background-color: #DBBE39;
+$primary-color: #5F9A58;
 
 html {
-    background-color: $background-color;
-    font-family: 'Noto Sans';
+    font-family: 'Cabin';
+    background-image: url("/images/beerimg.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: top center;
+    background-attachment: fixed;
 body {
-    font-family: 'Noto Sans';
+    font-family: 'Cabin';
 }
 .main-title {
-    font-size: 5em;
-    color: $primary-color;
+    font-size: 10em;
+    color: #85AA48;
     text-align: center;
     padding-top: .5em;
     padding-bottom: .25em;
-    letter-spacing: .2em;
-    font-family: 'Noto Sans';
+    font-family: 'Cabin';
     font-weight: 600;
+    text-shadow: 4px 4px 4px #555;
 }
 .main-nav {
-    font-size: 1.2em;
+    font-size: 3em;
     text-align: center;
     letter-spacing: .1em;
+    word-spacing:2em;
+    margin: .8em;
         a{
     text-decoration: none;
-    color: $primary-color;
+    text-shadow: 1px 1px 1px #555;
+    color: black;
         &:hover {
-            color:#FED730;
+            color:#85AA48;
+            text-shadow: 1px 1px 1px #555;
         }
         }
 }
