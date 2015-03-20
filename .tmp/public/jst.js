@@ -4,7 +4,7 @@ this["JST"]["assets/templates/beerdetails.html"] = function(obj) {
 obj || (obj = {});
 var __t, __p = '', __e = _.escape;
 with (obj) {
-__p += '<div class="beerdetails">\n  <div class="detailsandimage">\n    <!-- Start of the accordion -->\n    <div class="container">\n      <!-- Item 1 -->\n      <div class="accordion">\n        <label class="accordionitem">\n          <h2 ng-bind="beerdetails.name">\n          </h2>\n        </label>\n      </div>\n\n      <!-- Item 2 -->\n      <div class="accordion">\n        <label class="accordionitem">\n          <h2 ng-bind="beerdetails.breweries[0].name">\n          </h2>\n        </label>\n      </div>\n\n      <!-- Item 3 -->\n      <div class="accordion">\n        <label class="accordionitem">\n          <h2 ng-bind="beerdetails.style.name">\n          </h2>\n        </label>\n      </div>\n\n      <!-- Item 4 -->\n      <div class="accordion">\n        <label class="accordionitem">\n          <h2> {{beerdetails.abv}} ABV\n          </h2>\n        </label>\n      </div>\n\n      <!-- Item 5 -->\n      <div class="accordion">\n        <label class="accordionitem">\n          <h2> {{beerdetails.ibu}} IBU\n          </h2>\n        </label>\n      </div>\n\n\n    </div>\n\n\n\n\n    <div class="imagebox">\n      <img src="{{ beerdetails.labels.medium }}">\n    </div>\n  </div>\n\n\n  <!-- Item 6 -->\n  <div class="accordion2">\n    <label for="tq" class="accordionitem">\n      <h2 ng-bind="beerdetails.description" </h2>\n    </label>\n  </div>\n\n  <div class="pairingsbox">\n    <div class="pairings">Pairing Info: {{beerstyle.pairings}}\n    </div>\n    <br>\n    <a ng-href="{{beerstyle.url}}">Recommended Recipe(s)</a>\n\n  </div>\n</div>\n';
+__p += '<div class="beerdetails">\n  <div class="detailsandimage">\n    <!-- Start of the accordion -->\n    <div class="container">\n      <!-- Item 1 -->\n      <div class="accordion">\n        <label class="accordionitem">\n          <h2 ng-bind="beerdetails.name">\n          </h2>\n        </label>\n      </div>\n\n      <!-- Item 2 -->\n      <div class="accordion">\n        <label class="accordionitem">\n          <h2 ng-bind="beerdetails.breweries[0].name">\n          </h2>\n        </label>\n      </div>\n\n      <!-- Item 3 -->\n      <div class="accordion">\n        <label class="accordionitem">\n          <h2 ng-bind="beerdetails.style.name">\n          </h2>\n        </label>\n      </div>\n\n      <!-- Item 4 -->\n      <div class="accordion">\n        <label class="accordionitem">\n          <h2> {{beerdetails.abv}} ABV\n          </h2>\n        </label>\n      </div>\n\n      <!-- Item 5 -->\n      <div class="accordion">\n        <label class="accordionitem">\n          <h2> {{beerdetails.ibu}} IBU\n          </h2>\n        </label>\n      </div>\n\n\n    </div>\n\n\n\n\n    <div class="imagebox">\n      <img src="{{ beerdetails.labels.medium }}">\n    </div>\n  </div>\n\n\n  <!-- Item 6 -->\n  <div class="accordion2">\n    <label for="tq" class="accordionitem">\n      <h2 ng-bind="beerdetails.description" </h2>\n    </label>\n  </div>\n\n  <div class="pairingsbox">\n    <div class="pairings">Pairing Info: {{beerstyle.pairings}}\n    </div>\n    <br>\n    <div class="recipelink">\n      <a ng-href="{{beerstyle.url}}">Recommended Recipe(s)</a>\n    </div>\n\n  </div>\n</div>\n';
 
 }
 return __p
@@ -24,7 +24,7 @@ this["JST"]["assets/templates/info.html"] = function(obj) {
 obj || (obj = {});
 var __t, __p = '', __e = _.escape;
 with (obj) {
-__p += '';
+__p += 'info about the site/beer pairing\n';
 
 }
 return __p
@@ -44,7 +44,7 @@ this["JST"]["assets/templates/submit.html"] = function(obj) {
 obj || (obj = {});
 var __t, __p = '', __e = _.escape;
 with (obj) {
-__p += 'submit form where user can add recipe/pairing\n';
+__p += '<div class="submitpage" ng-controller="submitCtrl">\n  <div class="formbody"> <!-- Add here  ng-show="submitSuccess" -->\n    <h1>\n      <strong>Add Pairing Information!</strong>\n    </h1>\n    <form ng-submit="submit()">\n      <h3>Style</h3>\n      <input type="text" ng-class="class1" ng-model="name" placeholder="The Style of Beer">\n      <h4 ng-bind="error1"></h4>\n      <h3>Pairing Info</h3>\n      <input type="text" ng-class="class2" ng-model="email" placeholder="Recommended foods to pair with style">\n      <h4 ng-bind="error2"></h4>\n      <h3>Link</h3>\n      <input type="text" ng-class="class3" ng-model="website" placeholder="A link to recipe(s)">\n      <h4 ng-bind="error3"></h4>\n      <button> Submit</button>\n    </form>\n  </div>\n\n  <!-- <section class="success-page" ng-hide="submitSuccess">\n    <h1> Thanks for submitting! Cheers! </h1>\n  </section> -->\n\n</div>\n';
 
 }
 return __p
