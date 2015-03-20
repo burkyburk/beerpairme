@@ -39,3 +39,13 @@ __p += '<table class="newtable">\n  <thead>\n    <th>Style</th>\n    <th>Pairing
 }
 return __p
 };
+
+this["JST"]["assets/templates/submit.html"] = function(obj) {
+obj || (obj = {});
+var __t, __p = '', __e = _.escape;
+with (obj) {
+__p += 'submit form where user can add recipe/pairing\n';
+
+}
+return __p
+};

@@ -20,6 +20,12 @@ angular.module('app', ['app.controllers','ui.router', 'ngTable'])
 		url: '/newpairings',
 		templateUrl: 'templates/newpairings.html',
 		controller: 'newpairingsCtrl'
+	})
+	.state('submit', {
+		url: '/submit',
+		templateUrl: 'templates/submit.html',
+		controller: 'submitCtrl'
 	});
+
 	$urlRouterProvider.otherwise('/home');
 });

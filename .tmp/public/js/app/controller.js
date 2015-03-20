@@ -128,5 +128,9 @@ angular.module('app.controllers', ['ngTable'])
 
 })
 .controller('infoCtrl', function() {
+    
+})
+
+.controller('submitCtrl', function() {
 
 });
