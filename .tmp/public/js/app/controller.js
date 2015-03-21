@@ -104,7 +104,7 @@ angular.module('app.controllers', ['ngTable'])
             }
             function styleParse(beerstyle) {
                 if ($scope.beerstyle.indexOf('Hefeweizen') !==-1)
-                    GetRecipe('Hefeweizen');
+                       GetRecipe('Hefeweizen');
                 else if ($scope.beerstyle.indexOf('India Pale Ale') !==-1)
                         GetRecipe('India Pale Ale');
                 else if ($scope.beerstyle.indexOf('Imperial Stout') !==-1)
@@ -119,6 +119,8 @@ angular.module('app.controllers', ['ngTable'])
                         GetRecipe('Amber');
                 else if ($scope.beerstyle.indexOf('Smoke') !==-1)
                         GetRecipe('Smoke');
+                else if ($scope.beerstyle.indexOf('Wheat') !==-1)
+                        GetRecipe('Wheat');
                 else if ($scope.beerstyle.indexOf('Lager') !==-1)
                         GetRecipe('Lager');
                 else if ($scope.beerstyle.indexOf('Bock') !==-1)
@@ -134,7 +136,39 @@ angular.module('app.controllers', ['ngTable'])
                 else if ($scope.beerstyle.indexOf('Strong') !==-1)
                         GetRecipe('Strong Ale');
                 else if ($scope.beerstyle.indexOf('Barley Wine') !==-1)
-                        GetRecipe('Barley Wine');    
+                        GetRecipe('Barley Wine');
+                else if ($scope.beerstyle.indexOf('Fruit Beer') !==-1)
+                        GetRecipe('Fruit Beer');
+                else if ($scope.beerstyle.indexOf('Tripel') !==-1)
+                        GetRecipe('Tripel');
+                else if ($scope.beerstyle.indexOf('Dubbel') !==-1)
+                        GetRecipe('Dubbel');
+                else if ($scope.beerstyle.indexOf('Blonde') !==-1)
+                        GetRecipe('Blonde');
+                else if ($scope.beerstyle.indexOf('Doppelbock') !==-1)
+                        GetRecipe('Doppelbock');
+                else if ($scope.beerstyle.indexOf('Red Ale') !==-1)
+                        GetRecipe('Red Ale');
+                else if ($scope.beerstyle.indexOf('Schwarzbier') !==-1)
+                        GetRecipe('Schwarzbier');
+                else if ($scope.beerstyle.indexOf('Bière de Garde') !==-1)
+                        GetRecipe('Biere De Garde');
+                else if ($scope.beerstyle.indexOf('Quadrupel') !==-1)
+                        GetRecipe('Quadrupel');
+                else if ($scope.beerstyle.indexOf('Herb') !==-1)
+                        GetRecipe('Herb');
+                else if ($scope.beerstyle.indexOf('Pumpkin') !==-1)
+                        GetRecipe('Pumpkin');
+                else if ($scope.beerstyle.indexOf('Helles') !==-1)
+                        GetRecipe('Helles');
+                else if ($scope.beerstyle.indexOf('Dunkel') !==-1)
+                        GetRecipe('Dunkel');
+                else if ($scope.beerstyle.indexOf('Old Ale') !==-1)
+                        GetRecipe('Old Ale');
+
+
+
+
 
 
 
