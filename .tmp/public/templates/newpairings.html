@@ -1,15 +1,9 @@
-<table class="newtable">
-  <thead>
-    <th>Style</th>
-    <th>Pairing Info</th>
-    <th>Link</th>
-    <th>Date Added</th>
-  </thead>
-  <tbody>
-    <tr class="selected" ng-repeat="pairing in newpairings">
-      <td>{{ pairing.style }}</td>
-      <td>{{ pairing.pairings }}</td>
-      <td><a ng-href="{{pairing.url}}">New Recipe(s)</a></td>
-      <td>{{ pairing.createdAt }}</td>
-  </tbody>
+<table class="newtable" ng-table="tableParams">
+    <tr class="selected" ng-repeat="pairing in $data">
+      <td data-title="'Style'" sortable="'style'">
+          {{ pairing.style }}</td>
+      <td data-title="'Pairing Info'">{{ pairing.pairings }}</td>
+      <td data-title="'Links'"><a ng-href="{{pairing.url}}">New Recipe(s)</a></td>
+      <td data-title="'Date Added'" sortable="'createdAt'">
+          {{ pairing.createdAt }}</td>
 </table>
