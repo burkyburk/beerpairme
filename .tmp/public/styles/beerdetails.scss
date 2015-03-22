@@ -58,21 +58,14 @@ h1{
   line-height:1.2em;
 
 }
+.infobox {
+    display: inline-block;
+    text-align:left;
+    line-height:1.2em;
+    border-bottom: 1px solid black;
+    padding:1em 1em;
 
-
-
-#tq:checked ~ .hiddentext{
-  display: block;
-  visibility: visible;
-  opacity: 1;
 }
-
-input#tq{
-  display: none;
-  position: relative;
-}
-
-
 .pairingsbox {
     display: inline-block;
     margin: 1em 1em;
@@ -83,4 +76,29 @@ input#tq{
     text-align:center;
     font-size: 1.5em;
     margin-top:.5em;
+}
+@media screen and (max-width: 680px) {
+    .beerdetails {
+        font-size:1em;
+        width:500px;
+        .imagebox {
+            display:none;
+        }
+    }
+
+    .container {
+        width:100%;
+    }
+
+    .accordion #item6 {
+        margin:1em 1em;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .beerdetails {
+        width: 400px;
+    }
+
+
 }

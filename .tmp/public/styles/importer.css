@@ -374,6 +374,21 @@ html {
   position: relative;
   left: 1em; }
 
+@media screen and (max-width: 1125px) {
+  html .main-title {
+    font-size: 8em; }
+  html .main-nav {
+    font-size: 2em; } }
+@media screen and (max-width: 756px) {
+  html .main-title {
+    font-size: 7em; }
+  html .main-nav {
+    font-size: 1.5em; } }
+@media screen and (max-width: 600px) {
+  html .main-title {
+    font-size: 4em; }
+  html .main-nav {
+    font-size: 1em; } }
 .newtable {
   margin: 0 auto;
   font-size: 1.2em; }
@@ -454,14 +469,12 @@ table {
   text-align: left;
   line-height: 1.2em; }
 
-#tq:checked ~ .hiddentext {
-  display: block;
-  visibility: visible;
-  opacity: 1; }
-
-input#tq {
-  display: none;
-  position: relative; }
+.infobox {
+  display: inline-block;
+  text-align: left;
+  line-height: 1.2em;
+  border-bottom: 1px solid black;
+  padding: 1em 1em; }
 
 .pairingsbox {
   display: inline-block;
@@ -474,6 +487,21 @@ input#tq {
   font-size: 1.5em;
   margin-top: .5em; }
 
+@media screen and (max-width: 680px) {
+  .beerdetails {
+    font-size: 1em;
+    width: 500px; }
+    .beerdetails .imagebox {
+      display: none; }
+
+  .container {
+    width: 100%; }
+
+  .accordion #item6 {
+    margin: 1em 1em; } }
+@media screen and (max-width: 520px) {
+  .beerdetails {
+    width: 400px; } }
 .submitpage .formbody {
   background-color: white;
   margin: 3em 2em 5em;

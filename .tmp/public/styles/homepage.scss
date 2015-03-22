@@ -45,3 +45,44 @@ body {
     position:relative;
     left:1em;
 }
+
+@media screen and (max-width: 1125px) {
+html {
+
+    .main-title {
+        font-size: 8em;
+}
+    .main-nav {
+        font-size:2em;
+    }
+
+}
+}
+@media screen and (max-width: 756px) {
+    html {
+
+        .main-title {
+            font-size: 7em;
+    }
+        .main-nav {
+            font-size:1.5em;
+        }
+
+    }
+
+
+}
+@media screen and (max-width: 600px) {
+    html {
+
+        .main-title {
+            font-size: 4em;
+    }
+        .main-nav {
+            font-size:1em;
+        }
+
+    }
+
+
+}
