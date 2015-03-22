@@ -348,10 +348,13 @@ table {
   table {
     width: 400px; }
     table td {
-      font-size: .65em; } }
+      font-size: .65em; }
+
+  #bubbles {
+    display: none; } }
 @media screen and (max-width: 420px) {
   table {
-    width: 350px; } }
+    width: 330px; } }
 html {
   font-family: 'Cabin';
   background-image: url("/images/beerimg.jpg");

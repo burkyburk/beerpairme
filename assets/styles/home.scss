@@ -408,11 +408,13 @@
             font-size:.65em;
         }
     }
-
+    #bubbles {
+        display:none;
+    }
 
 }
 @media screen and (max-width: 420px) {
     table {
-        width: 350px;
+        width: 330px;
     }
 }
