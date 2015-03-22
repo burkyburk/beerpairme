@@ -349,6 +349,9 @@ table {
     width: 400px; }
     table td {
       font-size: .65em; } }
+@media screen and (max-width: 420px) {
+  table {
+    width: 350px; } }
 html {
   font-family: 'Cabin';
   background-image: url("/images/beerimg.jpg");
