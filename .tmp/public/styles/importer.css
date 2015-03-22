@@ -354,7 +354,7 @@ table {
     display: none; } }
 @media screen and (max-width: 420px) {
   table {
-    width: 330px; } }
+    width: 300px; } }
 html {
   font-family: 'Cabin';
   background-image: url("/images/beerimg.jpg");
@@ -477,17 +477,6 @@ table {
   .accordion label:nth-child(3) {
     border: none; }
 
-.accordion2 label {
-  display: inline-block;
-  background-color: #ffffff;
-  padding: 16.9px;
-  color: #424242;
-  text-shadow: 0 0 2px rgba(255, 255, 255, 0.6);
-  border-bottom: 1px solid black;
-  width: 626px;
-  text-align: left;
-  line-height: 1.2em; }
-
 .infobox {
   display: inline-block;
   text-align: left;
@@ -594,9 +583,13 @@ table {
 .submitpage textarea:-moz-placeholder {
   font-size: 1em;
   color: #555; }
+@media screen and (max-width: 440px) {
+  .submitpage .formbody {
+    font-size: .5em; } }
 @media screen and (min-width: 740px) {
   .submitpage .formbody {
-    margin: 3em 8em 5em; } }
+    margin: 3em 8em 5em;
+    font-size: 1em; } }
 @media screen and (min-width: 960px) {
   .submitpage .formbody {
     margin: 3em 16em 5em; } }

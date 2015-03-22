@@ -53,7 +53,7 @@ angular.module('app.controllers', ['ngTable'])
                 $http.get('/Recipe')
                 .success(function(response) {
                     for(var i=0; i<response.length; i++){
-                        response[i].createdAt = moment(response[i].createdAt).format('MMMM Do YYYY');
+                        response[i].createdAt = moment(response[i].createdAt).format('l');
                     }
                     $scope.newpairings = response;
                     console.log(response);
