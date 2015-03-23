@@ -7,12 +7,12 @@
       <h3>Style</h3>
       <input type="text" ng-class="class1" ng-model="myStyle" placeholder="The Style of Beer">
       <h4 ng-bind="error1"></h4>
-      <h3>Pairing Info</h3>
-      <input type="text" ng-class="class2" ng-model="myPairings" placeholder="Recommended foods to pair with style">
-      <h4 ng-bind="error2"></h4>
       <h3>Link</h3>
       <input type="text" ng-class="class3" ng-model="myUrl" placeholder="A link to recipe(s)">
       <h4 ng-bind="error3"></h4>
+      <h3>Pairing Info</h3>
+      <textarea type="text" ng-class="class2" ng-model="myPairings" placeholder="Recommended foods to pair with style"></textarea>
+      <h4 ng-bind="error2"></h4>
       <button ng-click="submitClick(myStyle,myPairings,myUrl)"> Submit</button>
     </form>
   </div>

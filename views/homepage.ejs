@@ -1,16 +1,11 @@
 <div ng-app="app">
-    <div class="main-title"> BeerPair.me</div>
-    <nav class="main-nav">
-            <a href="#" ui-sref-active="active" ui-sref="home"><span>Home</span></a><i class="icon ion-ios-pint" id="navicon"></i>
+	<div class="main-title"> BeerPair.me</div>
+	<nav class="main-nav">
+		<a ui-sref-active="active" ui-sref="home"><span class="tooltip tooltip-turnright"><span class="tooltip-item">Home</span><span class="tooltip-content">Search for beer.</span></span> </a>
+		
+		<a ui-sref-active="active" ui-sref="newpairings"> <span class="tooltip tooltip-turnleft"><span class="tooltip-item">Pairings</span><span class="tooltip-content">See the latest pairings.</span></span></a>
 
-            <a href="#" ui-sref-active="active" ui-sref="newpairings"><span>Pairings</span></a><i class="icon ion-ios-pint" id="navicon"></i>
-            <a href="#" ui-sref-active="active" ui-sref="info"><span>Info</span></a><i class="icon ion-ios-pint" id="navicon"></i>
-            <a href="#" ui-sref-active="active" ui-sref="submit"><span>Submit</span></a>
-
-
-
-    </nav>
-
-
+		<a ui-sref-active="active" ui-sref="submit"><span class="tooltip tooltip-turnright"><span class="tooltip-item">Submit</span><span class="tooltip-content">Submit pairings.</span></span></a>
+	</nav>
 	<main ui-view></main>
 </div>

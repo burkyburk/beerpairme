@@ -69,6 +69,9 @@ html {
         }
 
     }
+    .tooltip-content { 
+        display:none;
+    }
 
 
 }
@@ -85,4 +88,84 @@ html {
     }
 
 
+}
+
+
+.tooltip {
+    position: relative;
+    z-index: 999;
+    word-spacing: 0;
+
+
+}
+
+.tooltip-item {
+    cursor: pointer;
+        text-shadow: 4px 4px 4px #555;
+
+
+}
+
+.tooltip-content {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    z-index: 9999;
+    margin: 0 0 15px -140px;
+    padding: 20px;
+    width: 200px;
+    border-radius: 10px;
+    background: #fff;
+    color: #85AA48;
+    text-align: left;
+    font-size: 14px;
+    opacity: 0;
+    cursor: default;
+    transition: opacity 0.2s, transform .5s;
+    pointer-events: none;
+}
+
+.tooltip-turnright .tooltip-content {
+    transform: translate3d(0,50px,0) rotate3d(1,1,1,6deg);
+}
+
+.tooltip-turnleft .tooltip-content {
+    transform: translate3d(0,50px,0) rotate3d(1,1,1,-6deg);
+}
+
+.tooltip:hover .tooltip-content {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+    pointer-events: auto;
+}
+
+.tooltip-content::after {
+    position: absolute;
+    top: 100%;
+    width: 60px;
+    height: 50px;
+    background: url(../img/tooltip3.svg) no-repeat center center;
+    background-size: 100%;
+    content: '';
+    transition: transform 0.3s;
+    transform-origin: 50% 0;
+
+}
+
+.tooltip-turnright .tooltip-content::after {
+    left: 25%;
+    transform: scale3d(-1,1,1) rotate3d(1,1,1,25deg) translate3d(0,-15px,0);
+}
+
+.tooltip-turnleft .tooltip-content::after {
+    right: 25%;
+    transform: rotate3d(1,1,1,25deg) translate3d(0,-15px,0);
+}
+
+.tooltip-turnright:hover .tooltip-content::after {
+    transform: scale3d(-1,1,1) rotate3d(1,1,1,0) translate3d(0,-5px,0);
+}
+
+.tooltip-turnleft:hover .tooltip-content::after {
+    transform: rotate3d(1,1,1,0) translate3d(0,-5px,0);
 }

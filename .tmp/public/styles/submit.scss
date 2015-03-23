@@ -4,7 +4,7 @@
      margin: 3em 2em 5em;
      padding: 2em;
      font-size: 1.2em;
-     border: 1px solid black;
+     border: 1px solid grey;
     }
     h1 {
       font-size: 3em;
@@ -16,6 +16,7 @@
       margin-bottom: 0.2em;
       padding-top: .5em;
       padding-bottom: .2em;
+      font-size: 1.5em;
     }
     h4 {
       color: red;
@@ -23,15 +24,24 @@
       margin-top: -.2em;
     }
     input {
-      width: 100%;
-      border-left: 2px solid black;
+      width: 50%;
+      border-left: 2px solid grey;
       height: 1.6em;
       margin-bottom: 1em;
+      border: 1px solid #423446 ;
+      font-size: 12pt;
+      color: #423446;
+      border-radius: 5px;
+
     }
     textarea {
       width: 100%;
-      border-left: 2px solid black;
+      border-left: 2px solid grey;
       height: 6em;
+      border: 1px solid #423446 ;
+      font-size: 12pt;
+      color: #423446;
+      border-radius: 5px;
     }
     button {
       font-size: 1em;

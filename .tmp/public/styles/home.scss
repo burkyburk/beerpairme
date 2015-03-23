@@ -23,7 +23,7 @@
       margin: 0 auto;
 }
  table {
-   width:932px;
+   width:980px;
    margin: 10px auto;
    text-align: center;
 
@@ -32,7 +32,8 @@
          background: #FED730;
          opacity: .7;
          color: black;
-         font-size: 1.3em;
+         font-size: 1.2em;
+         
        }
 
        tr {
@@ -61,8 +62,22 @@
            font-size: 1em;
            cursor: pointer;
        }
-}
 
+       th.sortable {
+       
+            div:after {
+             content: "\f271";
+             font-family: Ionicons;
+             position:absolute;
+             transform: rotate(90deg);
+             margin-left: 6px;
+             margin-top: 4px;
+             font-size: 16px;
+         }
+        
+       }
+
+}
 
 #bubbles { height: 100%;
             overflow: hidden
@@ -418,3 +433,8 @@
         width: 300px;
     }
 }
+
+
+
+
+

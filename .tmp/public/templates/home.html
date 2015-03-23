@@ -8,9 +8,9 @@
       </div>
     </div>
   </form>
-  <table ng-show="showTable" ng-table="tableParams" class="search-table">
+  <table ng-show="showTable" ng-table="tableParams" class="search-table" class="table">
     <tr ng-repeat="beer in $data" ui-sref='beerdetails({beerId:beer.id})'>
-        <td data-title="'Name'" sortable="'name'">
+        <td data-title="'Name'" sortable="'name'" >      
                 {{beer.name}}
             </td>
         <td data-title="'Brewery'" sortable="'breweries[0].name'">
@@ -37,3 +37,5 @@
         <div class="bubble x8"></div>
         <div class="bubble x10"></div>
 </div>
+
+
