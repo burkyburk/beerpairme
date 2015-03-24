@@ -2,84 +2,81 @@
     margin: 2em auto;
     text-align: center;
     background-color: #FFFFFF;
-    width:660px;
+    width: 660px;
     border: 1px solid grey;
     font-size: 1.2em;
-        .detailsandimage {
-            border-bottom: 1px solid grey;
-            position:relative;
-        }
-        .imagebox {
-            height:293px;
-            width: 293px;
-            background-image: url("/images/foamybeer.png");
-            background-size: 25%;
-            background-repeat: no-repeat;
-            background-position:center;
-        }
-
-
-h1{
-    color:$primary-color;
-}
+    .detailsandimage {
+        border-bottom: 1px solid grey;
+        position: relative;
+    }
+    .imagebox {
+        height: 293px;
+        width: 293px;
+        background-image: url("/images/foamybeer.png");
+        background-size: 25%;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    h1 {
+        color: $primary-color;
+    }
 }
 
-
-.container{
-  width: 400px;
-  margin: 0 auto;
-  display: inline-block;
-  float:right;
-  border-left: 1px solid grey;
+.container {
+    width: 400px;
+    margin: 0 auto;
+    display: inline-block;
+    float: right;
+    border-left: 1px solid grey;
 }
 
-.accordion label{
-  display:block;
-  background-color: #ffffff;
-  padding: 19.4px;
-  color: #424242;
-  text-shadow: 0 0 2px rgba(255,255,255,0.6);
-  border-bottom: 1px solid grey;
-  font-weight: 750;
-          &:nth-child(3) {
-              border:none;
-          }
+.accordion label {
+    display: block;
+    background-color: #ffffff;
+    padding: 19.4px;
+    color: #424242;
+    text-shadow: 0 0 2px rgba(255, 255, 255, 0.6);
+    border-bottom: 1px solid grey;
+    font-weight: 750;
+    &:nth-child(3) {
+        border: none;
+    }
 }
 
 .infobox {
     display: inline-block;
-    text-align:left;
-    line-height:1.2em;
+    text-align: left;
+    line-height: 1.2em;
     border-bottom: 1px solid grey;
-    padding:1em 1em;
-
+    padding: 1em 1em;
 }
+
 .pairingsbox {
     display: inline-block;
     margin: 1em 1em;
-    text-align:left;
-    line-height:1.2em;
+    text-align: left;
+    line-height: 1.2em;
 }
+
 .recipelink {
-    text-align:center;
+    text-align: center;
     font-size: 1.5em;
-    margin-top:.5em;
+    margin-top: .5em;
 }
+
 @media screen and (max-width: 680px) {
     .beerdetails {
-        font-size:1em;
-        width:500px;
+        font-size: 1em;
+        width: 500px;
         .imagebox {
-            display:none;
+            display: none;
         }
     }
-
     .container {
-        width:100%;
+        width: 100%;
     }
-
     .accordion #item6 {
-        margin:1em 1em;
+        margin: 1em 1em;
     }
 }
 
@@ -87,15 +84,10 @@ h1{
     .beerdetails {
         width: 400px;
     }
-
-
-
 }
+
 @media screen and (max-width: 420px) {
     .beerdetails {
         width: 350px;
     }
-
-
-
 }

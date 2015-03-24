@@ -5,106 +5,94 @@ html {
     font-family: 'Cabin';
     background-image: url("/images/beerimg.jpg");
     background-repeat: no-repeat;
-    background-size:cover;
+    background-size: cover;
     background-position: top center;
     background-attachment: fixed;
-body {
-    font-family: 'Cabin';
-}
-.main-title {
-    font-size: 10em;
-    color: #85AA48;
-    text-align: center;
-    padding-top: .5em;
-    padding-bottom: .25em;
-    font-family: 'Cabin';
-    font-weight: 600;
-    text-shadow: 4px 4px 4px #555;
-}
-.main-nav {
-    font-size: 3em;
-    text-align: center;
-    letter-spacing: .1em;
-    word-spacing:2em;
-    margin: .8em;
-        a{
-    text-decoration: none;
-    text-shadow: 1px 1px 1px #555;
-    color: black;
-        &:hover {
-            color:#85AA48;
-            text-shadow: 2px 2px 2px white;
+    body {
+        font-family: 'Cabin';
+    }
+    .main-title {
+        font-size: 10em;
+        color: #85AA48;
+        text-align: center;
+        padding-top: .5em;
+        padding-bottom: .25em;
+        font-family: 'Cabin';
+        font-weight: 600;
+        text-shadow: 4px 4px 4px #555;
+    }
+    .main-nav {
+        font-size: 3em;
+        text-align: center;
+        letter-spacing: .1em;
+        word-spacing: 2em;
+        margin: .8em;
+        a {
+            text-decoration: none;
+            text-shadow: 1px 1px 1px #555;
+            color: black;
+            &:hover {
+                color: #85AA48;
+                text-shadow: 2px 2px 2px white;
+            }
         }
-        }
+    }
 }
-}
+
 .ng-table-pager {
-    display:none;
+    display: none;
 }
+
 #navicon {
-    position:relative;
-    left:1em;
+    position: relative;
+    left: 1em;
 }
 
 @media screen and (max-width: 1125px) {
-html {
-
-    .main-title {
-        font-size: 8em;
-}
-    .main-nav {
-        font-size:2em;
+    html {
+        .main-title {
+            font-size: 8em;
+        }
+        .main-nav {
+            font-size: 2em;
+        }
     }
+}
 
-}
-}
 @media screen and (max-width: 756px) {
     html {
-
         .main-title {
             font-size: 7em;
-    }
-        .main-nav {
-            font-size:1.5em;
         }
-
+        .main-nav {
+            font-size: 1.5em;
+        }
     }
-    .tooltip-content { 
-        display:none;
+    .tooltip-content {
+        display: none;
     }
-
-
 }
+
 @media screen and (max-width: 600px) {
     html {
-
         .main-title {
             font-size: 4em;
-    }
-        .main-nav {
-            font-size:1em;
         }
-
+        .main-nav {
+            font-size: 1em;
+        }
     }
-
-
 }
-
 
 .tooltip {
     position: relative;
     z-index: 999;
     word-spacing: 0;
-
-
 }
 
 .tooltip-item {
     cursor: pointer;
     text-shadow: 4px 4px 4px #555;
-
-
-
 }
 
 .tooltip-content {
@@ -125,22 +113,23 @@ html {
     transition: opacity 0.2s, transform .5s;
     pointer-events: none;
     letter-spacing: 0;
-    text-align:center;
+    text-align: center;
 }
 
 .tooltip-turnright .tooltip-content {
-    transform: translate3d(0,50px,0) rotate3d(1,1,1,0deg);
+    transform: translate3d(0, 50px, 0) rotate3d(1, 1, 1, 0deg);
 }
 
 .tooltip-turnleft .tooltip-content {
-    transform: translate3d(0,50px,0) rotate3d(1,1,1,0deg);
+    transform: translate3d(0, 50px, 0) rotate3d(1, 1, 1, 0deg);
 }
 
 .tooltip:hover .tooltip-content {
     opacity: 1;
-    transform: translate3d(0,0,0);
+    transform: translate3d(0, 0, 0);
     pointer-events: auto;
-}  
+}
+
 .tooltip-content::after {
     position: absolute;
     top: 100%;
@@ -151,23 +140,22 @@ html {
     content: '';
     transition: transform 0.3s;
     transform-origin: 50% 0;
-
 }
 
 .tooltip-turnright .tooltip-content::after {
     left: 25%;
-    transform: scale3d(-1,1,1) rotate3d(1,1,1,25deg) translate3d(0,-15px,0);
+    transform: scale3d(-1, 1, 1) rotate3d(1, 1, 1, 25deg) translate3d(0, -15px, 0);
 }
 
 .tooltip-turnleft .tooltip-content::after {
     right: 25%;
-    transform: rotate3d(1,1,1,25deg) translate3d(0,-15px,0);
+    transform: rotate3d(1, 1, 1, 25deg) translate3d(0, -15px, 0);
 }
 
 .tooltip-turnright:hover .tooltip-content::after {
-    transform: scale3d(-1,1,1) rotate3d(1,1,1,0) translate3d(0,-5px,0);
+    transform: scale3d(-1, 1, 1) rotate3d(1, 1, 1, 0) translate3d(0, -5px, 0);
 }
 
 .tooltip-turnleft:hover .tooltip-content::after {
-    transform: rotate3d(1,1,1,0) translate3d(0,-5px,0);
+    transform: rotate3d(1, 1, 1, 0) translate3d(0, -5px, 0);
 }
