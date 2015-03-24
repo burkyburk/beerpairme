@@ -101,7 +101,8 @@ html {
 
 .tooltip-item {
     cursor: pointer;
-        text-shadow: 4px 4px 4px #555;
+    text-shadow: 4px 4px 4px #555;
+
 
 
 }
@@ -113,16 +114,18 @@ html {
     z-index: 9999;
     margin: 0 0 15px -140px;
     padding: 20px;
-    width: 200px;
+    width: 170px;
     border-radius: 10px;
     background: #fff;
     color: #85AA48;
     text-align: left;
-    font-size: 14px;
+    font-size: 16px;
     opacity: 0;
     cursor: default;
     transition: opacity 0.2s, transform .5s;
     pointer-events: none;
+    letter-spacing: 0;
+    text-align:center;
 }
 
 .tooltip-turnright .tooltip-content {

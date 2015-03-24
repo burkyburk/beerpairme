@@ -355,6 +355,8 @@
     100% {
         top: 400px;
     }
+    transform: translateZ(0);
+
 }
 
 @-webkit-keyframes sideWays {
@@ -364,6 +366,8 @@
     100% {
         margin-left:50px;
     }
+    transform: translateZ(0);
+
 }
 
 @-moz-keyframes moveclouds {
@@ -374,6 +378,8 @@
     100% {
         top: -500px;
     }
+    transform: translateZ(0);
+
 }
 
 @-moz-keyframes sideWays {
@@ -383,6 +389,8 @@
     100% {
         margin-left:50px;
     }
+    transform: translateZ(0);
+
 }
 @-o-keyframes moveclouds {
     0% {
@@ -391,6 +399,8 @@
     100% {
         top: -500px;
     }
+    transform: translateZ(0);
+
 }
 
 @-o-keyframes sideWays {
@@ -400,6 +410,8 @@
     100% {
         margin-left:50px;
     }
+    transform: translateZ(0);
+
 }
 @media screen and (max-width: 952px) {
         table {
