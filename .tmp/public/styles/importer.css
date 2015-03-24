@@ -451,10 +451,10 @@ html {
   pointer-events: none; }
 
 .tooltip-turnright .tooltip-content {
-  transform: translate3d(0, 50px, 0) rotate3d(1, 1, 1, 6deg); }
+  transform: translate3d(0, 50px, 0) rotate3d(1, 1, 1, 0deg); }
 
 .tooltip-turnleft .tooltip-content {
-  transform: translate3d(0, 50px, 0) rotate3d(1, 1, 1, -6deg); }
+  transform: translate3d(0, 50px, 0) rotate3d(1, 1, 1, 0deg); }
 
 .tooltip:hover .tooltip-content {
   opacity: 1;
