@@ -457,10 +457,11 @@ table {
     width: 350px; } }
 .submitpage .formbody {
   background-color: white;
-  margin: 3em 2em 5em;
+  margin: 0 auto;
   padding: 2em;
-  font-size: 1.2em;
-  border: 1px solid grey; }
+  font-size: 1.4em;
+  border: 1px solid grey;
+  width: 500px; }
 .submitpage h1 {
   font-size: 3em;
   padding-bottom: 0.5em;
@@ -476,7 +477,7 @@ table {
   font-size: 0.6em;
   margin-top: -.2em; }
 .submitpage input {
-  width: 50%;
+  width: 100%;
   border-left: 2px solid grey;
   height: 1.6em;
   margin-bottom: 1em;
@@ -539,10 +540,10 @@ table {
     font-size: .5em; } }
 @media screen and (min-width: 740px) {
   .submitpage .formbody {
-    margin: 3em 8em 5em;
+    margin: 0 auto;
     font-size: 1em; } }
 @media screen and (min-width: 960px) {
   .submitpage .formbody {
-    margin: 3em 16em 5em; } }
+    margin: 0 auto; } }
 
 /*# sourceMappingURL=importer.css.map */
