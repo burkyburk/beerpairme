@@ -56,7 +56,6 @@ angular.module('app.controllers', ['ngTable'])
                         response[i].createdAt = moment(response[i].createdAt).format('l');
                     }
                     $scope.newpairings = response;
-                    console.log(response);
                     $scope.tableParams = new ngTableParams({
                         page: 1,            // show first page
                         count: 40,          // count per page
@@ -274,6 +273,8 @@ angular.module('app.controllers', ['ngTable'])
             style: myStyle,
             pairings: myPairings,
             url: myUrl
+
+
         }
     );
 

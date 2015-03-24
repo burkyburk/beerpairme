@@ -34,7 +34,7 @@ this["JST"]["assets/templates/newpairings.html"] = function(obj) {
 obj || (obj = {});
 var __t, __p = '', __e = _.escape;
 with (obj) {
-__p += '<table class="newtable" ng-table="tableParams">\n    <tr class="selected" ng-repeat="pairing in $data">\n      <td data-title="\'Style\'" sortable="\'style\'">\n          {{ pairing.style }}</td>\n      <td data-title="\'Pairing Info\'">{{ pairing.pairings }}</td>\n      <td data-title="\'Links\'"><a ng-href="{{pairing.url}}">New Recipe(s)</a></td>\n      <td data-title="\'Date Added\'" sortable="\'createdAt\'">\n          {{ pairing.createdAt }}</td>\n</table>\n';
+__p += '<table class="newtable" ng-table="tableParams">\n    <tr class="selected" ng-repeat="pairing in $data">\n      <td data-title="\'Style\'" sortable="\'style\'">\n          {{ pairing.style }}</td>\n      <td data-title="\'Pairing Info\'">{{ pairing.pairings }}</td>\n      <td data-title="\'Links\'"><a ng-href="{{pairing.url}}">New Recipe(s)</a></td>\n      <td data-title="\'Added\'" sortable="\'createdAt\'">\n          {{ pairing.createdAt }}</td>\n</table>\n';
 
 }
 return __p
@@ -44,7 +44,7 @@ this["JST"]["assets/templates/submit.html"] = function(obj) {
 obj || (obj = {});
 var __t, __p = '', __e = _.escape;
 with (obj) {
-__p += '<div class="submitpage" ng-controller="submitCtrl">\n  <div class="formbody" ng-show="submitSuccess">\n    <h1>\n      <strong>Add Pairing Information</strong>\n    </h1>\n    <form ng-submit="submit()">\n      <h3>Style</h3>\n      <input type="text" ng-class="class1" ng-model="myStyle" placeholder="The Style of Beer">\n      <h4 ng-bind="error1"></h4>\n      <h3>Link</h3>\n      <input type="text" ng-class="class3" ng-model="myUrl" placeholder="A link to recipe(s)">\n      <h4 ng-bind="error3"></h4>\n      <h3>Pairing Info</h3>\n      <textarea type="text" ng-class="class2" ng-model="myPairings" placeholder="Recommended foods to pair with style"></textarea>\n      <h4 ng-bind="error2"></h4>\n      <button ng-click="submitClick(myStyle,myPairings,myUrl)"> Submit</button>\n    </form>\n  </div>\n\n  <section class="success-page" ng-hide="submitSuccess">\n    <h1> Thanks for submitting! Cheers! </h1>\n  </section>\n\n</div>\n';
+__p += '<div class="submitpage" ng-controller="submitCtrl">\n  <div class="formbody" ng-show="submitSuccess">\n    <h1>\n    <strong>Add Pairing Information</strong>\n    </h1>\n    <form ng-submit="submit()">\n      <h3>Style</h3>\n      <input type="text" ng-class="class1" ng-model="myStyle" placeholder="The style of beer">\n      <h4 ng-bind="error1"></h4>\n      <h3>Pairing Info</h3>\n      <input type="text" ng-class="class2" ng-model="myPairings" placeholder="Recommended foods to pair with style">\n      <h4 ng-bind="error2"></h4>\n      <h3>Link</h3>\n      <input type="text" ng-class="class3" ng-model="myUrl" placeholder="A link to recipe(s)">\n      <h4 ng-bind="error3"></h4>\n      \n      <button ng-click="submitClick(myStyle, myPairings, myUrl)"> Submit</button>\n    </form>\n  </div>\n  <section class="success-page" ng-hide="submitSuccess">\n    <h1> Thanks for submitting! Cheers! </h1>\n  </section>\n</div>';
 
 }
 return __p

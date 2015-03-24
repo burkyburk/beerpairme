@@ -1,24 +1,23 @@
 <div class="submitpage" ng-controller="submitCtrl">
   <div class="formbody" ng-show="submitSuccess">
     <h1>
-      <strong>Add Pairing Information</strong>
+    <strong>Add Pairing Information</strong>
     </h1>
     <form ng-submit="submit()">
       <h3>Style</h3>
-      <input type="text" ng-class="class1" ng-model="myStyle" placeholder="The Style of Beer">
+      <input type="text" ng-class="class1" ng-model="myStyle" placeholder="The style of beer">
       <h4 ng-bind="error1"></h4>
+      <h3>Pairing Info</h3>
+      <input type="text" ng-class="class2" ng-model="myPairings" placeholder="Recommended foods to pair with style">
+      <h4 ng-bind="error2"></h4>
       <h3>Link</h3>
       <input type="text" ng-class="class3" ng-model="myUrl" placeholder="A link to recipe(s)">
       <h4 ng-bind="error3"></h4>
-      <h3>Pairing Info</h3>
-      <textarea type="text" ng-class="class2" ng-model="myPairings" placeholder="Recommended foods to pair with style"></textarea>
-      <h4 ng-bind="error2"></h4>
-      <button ng-click="submitClick(myStyle,myPairings,myUrl)"> Submit</button>
+      
+      <button ng-click="submitClick(myStyle, myPairings, myUrl)"> Submit</button>
     </form>
   </div>
-
   <section class="success-page" ng-hide="submitSuccess">
     <h1> Thanks for submitting! Cheers! </h1>
   </section>
-
 </div>
