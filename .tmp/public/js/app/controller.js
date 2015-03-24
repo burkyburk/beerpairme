@@ -50,7 +50,7 @@ angular.module('app.controllers', ['ngTable'])
             $scope.newpairings = [];
 
             function NewPairings() {
-                $http.get('/Recipe')
+                $http.get('/Recipe?limit=1000')
                 .success(function(response) {
                     for(var i=0; i<response.length; i++){
                         response[i].createdAt = moment(response[i].createdAt).format('l');
