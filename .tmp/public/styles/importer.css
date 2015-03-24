@@ -4,7 +4,7 @@
   text-align: center; }
 
 .container-1 input#search {
-  width: 400px;
+  width: 450px;
   height: 40px;
   background: #F4F7F8;
   border: 1px solid #423446;
@@ -177,20 +177,17 @@ table {
   0% {
     top: 97%; }
   100% {
-    top: 400px; }
-  transform: translateZ(0); }
+    top: 400px; } }
 @-moz-keyframes moveclouds {
   0% {
     top: 500px; }
   100% {
-    top: -500px; }
-  transform: translateZ(0); }
+    top: -500px; } }
 @-o-keyframes moveclouds {
   0% {
     top: 500px; }
   100% {
-    top: -500px; }
-  transform: translateZ(0); }
+    top: -500px; } }
 @media screen and (max-width: 952px) {
   table {
     width: 800px; } }
