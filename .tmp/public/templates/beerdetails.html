@@ -44,17 +44,19 @@
   </div>
   <!-- Item 6 -->
   <div class="infobox">
+      <h1>Beer Details</h1>
     <label class="accordionitem">
       <h2 id="item6" ng-bind="beerdetails.description" </h2>
     </label>
   </div>
   <div class="pairingsbox">
-    <div class="pairings"><strong>Style Info:</strong>   {{beerstyle.pairings}}
+      <h1>Style Details</h1>
+    <div class="pairings">   {{beerstyle.pairings}}
     </div>
     <br>
     <div class="recipelink">
       <i class="icon ion-fork">&nbsp;</i>
-      <a ng-href="{{beerstyle.url}}">Recommended Recipe(s)</a>
+      <a ng-href="{{beerstyle.url}}" TARGET="_blank">Recommended Recipe(s)</a>
       &nbsp;<i class="icon ion-knife"></i>
     </div>
   </div>
