@@ -237,7 +237,7 @@ html {
     margin: .8em; }
     html .main-nav a {
       text-decoration: none;
-      text-shadow: 1px 1px 1px #555;
+      text-shadow: 3px 3px 3px #555;
       color: black; }
       html .main-nav a:hover {
         color: #85AA48;
@@ -280,7 +280,7 @@ html {
 .tooltip-content {
   position: absolute;
   bottom: 100%;
-  left: 50%;
+  left: 65%;
   z-index: 9999;
   margin: 0 0 15px -140px;
   padding: 20px;
