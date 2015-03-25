@@ -64,7 +64,7 @@ table {
             transform: rotate(90deg);
             margin-left: 6px;
             margin-top: 4px;
-            font-size: 16px;
+            font-size: 14px;
         }
     }
 }
@@ -234,12 +234,19 @@ table {
     table {
         width: 800px;
     }
+    th.sortable {
+        div:after {
+           display:none;
+        }
+    }
+
 }
 
 @media screen and (max-width: 820px) {
     table {
         width: 600px;
     }
+    
 }
 
 @media screen and (max-width: 620px) {
@@ -253,9 +260,6 @@ table {
         }
     }
     #bubbles {
-        display: none;
-    }
-    th.sortable {
         display: none;
     }
 }

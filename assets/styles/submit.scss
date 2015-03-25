@@ -3,7 +3,7 @@
         background-color: white;
         margin: 0 auto;
         padding: 2em;
-        font-size: 1.4em;
+        font-size: 1.2em;
         border: 1px solid grey;
         width:500px;
     }
@@ -96,20 +96,24 @@
         font-size: 1em;
         color: #555;
     }
-    @media screen and (max-width: 440px) {
+    
+    @media screen and (max-width: 960px) {
         .formbody {
-            font-size: .5em;
+            margin:0 auto;
         }
     }
-    @media screen and (min-width: 740px) {
+    @media screen and (max-width: 740px) {
         .formbody {
             margin:0 auto;
             font-size: 1em;
+            width:375px;
+
         }
     }
-    @media screen and (min-width: 960px) {
+    @media screen and (max-width: 440px) {
         .formbody {
-            margin:0 auto;
+            font-size: .5em;
+            width:300px;
         }
     }
 }

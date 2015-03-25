@@ -7,7 +7,8 @@ table {
     max-width: 960px;
     margin: 10px auto;
     text-align: center;
-    thead th {
+
+    thead th{
         font-weight: 600;
         background: #FED730;
         opacity: .7;
@@ -33,4 +34,14 @@ table {
         padding: 15px;
         font-weight: 300;
     }
+
+    @media screen and (max-width: 622px) {
+        .newtable {
+            font-size: .75em;
+        }
+        thead th {
+            font-size: .75em;
+        }
+    }
+
 }
