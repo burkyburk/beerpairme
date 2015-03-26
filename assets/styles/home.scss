@@ -26,7 +26,7 @@
 }
 
 table {
-    width: 980px;
+    width: 1600px;
     margin: 10px auto;
     text-align: center;
     thead th {
@@ -35,6 +35,10 @@ table {
         opacity: .7;
         color: black;
         font-size: 1.2em;
+        width: 1px;
+        div:after {
+            margin-top:4px;
+        }
     }
     tr {
         background: #f4f7f8;
@@ -47,7 +51,7 @@ table {
     }
     th {
         text-align: left;
-        padding: 20px;
+        padding: 25px 25px;
         font-weight: 400;
         font-size: 1em;
         cursor: pointer;
@@ -57,17 +61,20 @@ table {
         padding: 15px;
         font-weight: 300;
         font-size: 1em;
-        cursor: pointer;
+        cursor: pointer; 
     }
+    td:nth-child(4){
+            text-align:center;
+        }
     th.sortable {
         div:after {
             content: "\f271";
             font-family: Ionicons;
             position: absolute;
             transform: rotate(90deg);
-            margin-left: 6px;
-            margin-top: 4px;
-            font-size: 14px;
+            margin-left: 4px;
+            margin-top: 7px;
+            font-size: 12px;
         }
     }
 }
