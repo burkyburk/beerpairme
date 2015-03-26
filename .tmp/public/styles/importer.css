@@ -292,7 +292,7 @@ html {
   background: #fff;
   color: #85AA48;
   text-align: left;
-  font-size: 16px;
+  font-size: .5em;
   opacity: 0;
   cursor: default;
   transition: opacity 0.2s, transform .5s;
@@ -433,7 +433,7 @@ table {
 .recipelink {
   text-align: center;
   font-size: 2em;
-  margin-top: .5em;
+  margin: .5em 0;
   background-color: #5F9A58;
   border-radius: 5px;
   -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
@@ -459,7 +459,10 @@ table {
     margin: 1em 1em; } }
 @media screen and (max-width: 520px) {
   .beerdetails {
-    width: 400px; } }
+    width: 400px; }
+
+  .recipelink {
+    font-size: 1.5em; } }
 @media screen and (max-width: 420px) {
   .beerdetails {
     width: 350px; } }

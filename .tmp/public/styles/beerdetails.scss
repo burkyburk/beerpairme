@@ -71,7 +71,7 @@
 .recipelink {
     text-align: center;
     font-size: 2em;
-    margin-top: .5em;
+    margin: .5em 0;
     background-color: $primary-color;
     border-radius: 5px;
     -webkit-box-shadow:7px 7px 5px 0px rgba(50, 50, 50, 0.75);
@@ -106,6 +106,9 @@
 @media screen and (max-width: 520px) {
     .beerdetails {
         width: 400px;
+    }
+    .recipelink {
+        font-size: 1.5em;
     }
 }
 
