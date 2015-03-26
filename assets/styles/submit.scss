@@ -67,34 +67,48 @@
     input::-webkit-input-placeholder {
         font-size: 1em;
         color: #555;
+        padding-left:.25em;
     }
     input::-moz-placeholder {
         font-size: 1em;
         color: #555;
+        padding-left: .25em;
     }
     input:-ms-input-placeholder {
         font-size: 1em;
         color: #555;
+        padding-left: .25em;
+
     }
     input:-moz-placeholder {
         font-size: 1em;
         color: #555;
+        padding-left: .25em;
+
     }
     textarea::-webkit-input-placeholder {
         font-size: 1em;
         color: #555;
+        padding-left: .25em;
+
     }
     textarea::-moz-placeholder {
         font-size: 1em;
         color: #555;
+        padding-left: .25em;
+
     }
     textarea:-ms-input-placeholder {
         font-size: 1em;
         color: #555;
+        padding-left: .25em;
+
     }
     textarea:-moz-placeholder {
         font-size: 1em;
         color: #555;
+        padding-left: .25em;
+
     }
     
     @media screen and (max-width: 960px) {

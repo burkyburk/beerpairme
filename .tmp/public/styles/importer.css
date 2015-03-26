@@ -532,28 +532,36 @@ table {
   padding-top: 2em; }
 .submitpage input::-webkit-input-placeholder {
   font-size: 1em;
-  color: #555; }
+  color: #555;
+  padding-left: .25em; }
 .submitpage input::-moz-placeholder {
   font-size: 1em;
-  color: #555; }
+  color: #555;
+  padding-left: .25em; }
 .submitpage input:-ms-input-placeholder {
   font-size: 1em;
-  color: #555; }
+  color: #555;
+  padding-left: .25em; }
 .submitpage input:-moz-placeholder {
   font-size: 1em;
-  color: #555; }
+  color: #555;
+  padding-left: .25em; }
 .submitpage textarea::-webkit-input-placeholder {
   font-size: 1em;
-  color: #555; }
+  color: #555;
+  padding-left: .25em; }
 .submitpage textarea::-moz-placeholder {
   font-size: 1em;
-  color: #555; }
+  color: #555;
+  padding-left: .25em; }
 .submitpage textarea:-ms-input-placeholder {
   font-size: 1em;
-  color: #555; }
+  color: #555;
+  padding-left: .25em; }
 .submitpage textarea:-moz-placeholder {
   font-size: 1em;
-  color: #555; }
+  color: #555;
+  padding-left: .25em; }
 @media screen and (max-width: 960px) {
   .submitpage .formbody {
     margin: 0 auto; } }

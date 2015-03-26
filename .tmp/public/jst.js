@@ -24,7 +24,7 @@ this["JST"]["assets/templates/newpairings.html"] = function(obj) {
 obj || (obj = {});
 var __t, __p = '', __e = _.escape;
 with (obj) {
-__p += '<table class="newtable" ng-table="tableParams">\n\t<tr class="selected" ng-repeat="pairing in $data">\n\t\t<td data-title="\'Style\'" sortable="\'style\'">\n\t\t{{ pairing.style }}</td>\n\t\t<td data-title="\'Pairing Info\'">{{ pairing.pairings }}</td>\n\t\t<td data-title="\'Links\'"><a ng-href="{{pairing.url}}">New Recipe(s)</a></td>\n\t\t<td data-title="\'Added\'" sortable="\'createdAt\'">\n\t\t{{ pairing.createdAt }}</td>\n\t</table>';
+__p += '<table class="newtable" ng-table="tableParams">\n\t<tr class="selected" ng-repeat="pairing in $data">\n\t\t<td data-title="\'Style\'" sortable="\'style\'">\n\t\t{{ pairing.style }}</td>\n\t\t<td data-title="\'Pairing Info\'">{{ pairing.pairings }}</td>\n\t\t<td data-title="\'Links\'"><a ng-href="{{pairing.url}}" TARGET="_blank">New Recipe(s)</a></td>\n\t\t<td data-title="\'Added\'" sortable="\'createdAt\'">\n\t\t{{ pairing.createdAt }}</td>\n\t</table>';
 
 }
 return __p
