@@ -36,9 +36,14 @@ table {
         color: black;
         font-size: 1.2em;
         width: 1px;
+
         div:after {
             margin-top:4px;
         }
+    }
+    thead th:nth-child(4) {
+        text-align:center;
+
     }
     tr {
         background: #f4f7f8;

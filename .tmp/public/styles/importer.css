@@ -36,6 +36,8 @@ table {
     width: 1px; }
     table thead th div:after {
       margin-top: 4px; }
+  table thead th:nth-child(4) {
+    text-align: center; }
   table tr {
     background: #f4f7f8;
     border-bottom: 1px solid #FFF;
