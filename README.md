@@ -1,8 +1,8 @@
-# beerpair.me
+# BeerPair.me
 
 ## Description
 
-I am creating a beer pairings application. With the current craft beer boom in the world, people deserve to have an application that can recommend food for them to eat with their favorite beers. Do you ever find a new beer style and wonder what type of food or cuisine it would go well with? This app will solve that problem and make food recommendations for you.
+BeerPair.me is a beer pairings application. With the current craft beer boom in the world, people deserve to have an application that can recommend food for them to eat with their favorite beers. Do you ever find a new beer style and wonder what type of food or cuisine it would go well with? This app will solve that problem and make food recommendations for you.
 
 You will be able to simply search a large database containing every beer in the world. Once you have selected a beer, appropriate food pairings will be listed. This app truly does the hard work for you. Your friends and family will be impressed with your pairings, and the best part is, you can take all the credit!
 
@@ -39,10 +39,13 @@ Database: Postgres |
 Backend : Sails.js |
 MVC Framework: Angular.js |
 Angular:  Angular-ui-router |
-Library: validator.js |
+Angular: ng-Table |
+Library: moment.js |
 Library: lodash.js |
 
 ## Contact Information
+
+Email: JacobDouglasBurkhart@gmail.com
 
 Twitter: https://twitter.com/burkyburk
 
